@@ -1,0 +1,156 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    user-select: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background: #2d3337;
+}
+
+.container{
+    width: 90rem;
+    padding: 2px;
+    margin: 5rem auto 0;
+    background: #eee;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    min-height: calc(100vh -  5rem);
+}
+
+.warning-window{
+    padding: 2rem;
+    background: #f9d2d5;
+    width: 55%;
+    margin: 2rem auto 0;
+    font-size: 2rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    display: none;
+}
+
+.container h1{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.container .inputs{
+    margin: 2rem 0;
+}
+
+.inputs span {
+    padding: 1rem 1.5rem;
+    background: #2d3337;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.inputs input , .yearsToPay{
+    width: 50%;
+    outline: none;
+    border: none;
+    caret-color: #2d3337;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+.yearsToPay{
+    width: 55% !important;
+}
+
+.btn{
+    display: inline-block;
+    width: 55%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.5rem 2.5rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background: #2d3337;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.result-information {
+    background: #2d3337;
+    width: 55%;
+    margin: 1rem auto;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    width: 60%;
+    margin: 3rem 0;
+    background: #66a6ff;
+    margin: 4rem auto;
+    font-size: 2rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: #fff;
+    padding: 1.5rem 2.5rem;
+}
+
+@media(max-width:567px){
+    .container{
+        background: #2d3337 !important;
+        width: 100% !important;
+        min-height: 100vh !important;
+        margin: 0 auto;
+    }
+    .container h1{
+        color: #fff !important;
+    }
+    .inputs span{
+        background: #66a6ff !important;
+    }
+    .btn{
+        background: #66a6ff !important;
+    }
+    .yearsToPay{
+        width: 60% !important;
+    }
+    .result-information {
+        width: 90% !important;
+        white-space: nowrap !important;
+        background: #66a6ff !important;
+    }
+    .warning-window{
+        width: 70% !important;
+    }
+    footer{
+        width: 90% !important;
+        font-size: 13px !important;
+    }
+}

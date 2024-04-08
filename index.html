@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="warning-window">Please check your information again !</div>
+        <h1></h1>
+        <div class="inputs">
+            <span>$</span>
+            <input type="text" placeholder="Loan Amount" class="Amount">
+        </div>
+        <div class="inputs">
+            <span>%</span>
+            <input type="text" placeholder="interest"class = 'interest' maxlength="3"> 
+        </div>
+        <div class="inputs">
+            <span>$</span>
+            <input type="text" placeholder="monthly salary" class="monthlySalary">
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="years to Repay" class="yearsToPay">
+        </div>
+        <button class="btn">Calculate Payments</button>
+        <div class="result_list"></div>
+        <footer></footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
